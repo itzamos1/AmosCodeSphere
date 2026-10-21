@@ -1,0 +1,565 @@
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #073b6f;
+    color: white;
+
+    padding: 25px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    color: #dcecff;
+}
+
+.phone {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    background-color: #052d54;
+
+    padding: 15px 8%;
+
+    text-align: right;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    background-color: white;
+
+    padding: 50px;
+
+    margin: 30px 0;
+
+    border-radius: 10px;
+}
+
+.section-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 450px;
+
+    background:
+        linear-gradient(
+            rgba(0, 45, 90, 0.60),
+            rgba(0, 45, 90, 0.75)
+        ),
+        url("vip.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    margin-top: 0;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    font-size: 45px;
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 28px;
+
+    background-color: #ffd166;
+
+    color: #222;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-container {
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3,
+.about-text h4,
+.about-text h5,
+.about-text h6 {
+    color: #073b6f;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+}
+
+.school-image {
+    flex: 1;
+
+    text-align: center;
+}
+
+.school-image img {
+    width: 100%;
+
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+figcaption {
+    color: blueviolet;
+
+    font-style: italic;
+
+    margin-top: 8px;
+    cursor:pointer;
+}
+
+.highlight {
+    color: #e63946;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PROGRAMS
+========================================= */
+
+.program-container {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.program-card {
+    flex: 1;
+
+    min-width: 220px;
+
+    background-color: #eef5fc;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    border-top: 4px solid #073b6f;
+
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+    color: #073b6f;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   FACILITIES
+========================================= */
+
+.lists-container {
+    display: flex;
+
+    gap: 80px;
+}
+
+.list-box {
+    flex: 1;
+}
+
+.list-box h3 {
+    color: #073b6f;
+
+    margin-bottom: 15px;
+}
+
+.list-box li {
+    margin: 10px 0;
+
+    padding-left: 5px;
+}
+
+
+/* =========================================
+   MEDIA
+========================================= */
+
+.media-section {
+    text-align: center;
+}
+
+.media-box {
+    margin-bottom: 35px;
+}
+
+.media-box h3 {
+    color: #073b6f;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   ADMISSION FORM
+========================================= */
+
+form {
+    max-width: 700px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#Apply{
+    background-color: grey;
+}
+
+#mk1{
+    color: white;
+    background: gray;
+}
+
+label {
+    display: block;
+
+    margin-top: 18px;
+
+    font-weight: bold;
+    color:white;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #073b6f;
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.checkbox {
+    font-weight: normal;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.checkbox input {
+    width: auto;
+
+    margin: 0;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.submit-button {
+    background-color: #073b6f;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #052d54;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+    text-align: center;
+    background: #666;
+    color: #ccc;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #052d54;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer span {
+    color: #ffd166;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        display: block;
+
+        text-align: center;
+    }
+
+    .phone {
+        margin-top: 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px 10px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .about-container {
+        display: block;
+    }
+
+    .school-image {
+        margin-top: 25px;
+    }
+
+    .program-container {
+        display: block;
+    }
+
+    .program-card {
+        margin-bottom: 20px;
+    }
+
+    .lists-container {
+        display: block;
+    }
+
+    .list-box {
+        margin-bottom: 30px;
+    }
+
+    video,
+    audio {
+        width: 100%;
+    }
+}
